@@ -13,7 +13,7 @@
             
             <table class = "tabletext-base mx-auto">
             <thead >
-                <tr class=" bg-emerald-500">
+                <tr class=" bg-violet-400">
 
                 <th class="border-black border-4"> # </th>
                 <th class="border-black border-4">Asignatura</th>
@@ -40,7 +40,7 @@
                 <div class="w-1/4 pb-4 mx-auto px-5 my-10 border-4 border-indigo-50  bg-white rounded-sm">
 
                     <!-- Información -->
-                    <div class="w-full mt-4 bg-lime-100  rounded-md">
+                    <div class="w-full mt-4 bg-cyan-100  rounded-md">
                         <h1 class="text-2xl  text-center font-bold  text-black">Tu carrera es {{$asignatura->ing}}</h1>
                     </div>  
                 

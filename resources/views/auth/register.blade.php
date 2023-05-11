@@ -15,7 +15,16 @@
             <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
-
+        <div class="mt-4">
+            <x-select id="select" class="block w-full" name="ing" :value="__('ing')">
+                <option value="" selected disabled hidden>{{ __('Elige tu ingenieria')}}</option>
+                <option value="isc">Ingenieria en Sistemas Computacionales</option>
+                <option value="ier">Ingenieria Energias Renovables</option>
+                <option value="ii">Ingenieria Industrial</option>
+                <option value="ie">Ingenieria Electronica</option>
+                <option value="iem">Ingenieria Electro Mecanica</option>
+            </x-select>
+        </div>
         <!-- Password -->
         <div class="mt-4">
             <x-input-label for="password" :value="__('Password')" />

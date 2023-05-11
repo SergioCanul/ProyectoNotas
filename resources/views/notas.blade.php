@@ -15,11 +15,11 @@
             <!--Card mensaje inicio-->
             <div class="w-1/4 pb-4 mx-auto px-5 my-10 border-4 border-indigo-50  bg-white rounded-sm">
                 <!-- Información -->
-                <div class="w-full mt-4 bg-lime-100  rounded-md">
-                    <h1 class="text-2xl  text-center font-bold  text-black">Tus notas son</h1>
+                <div class="w-full mt-4 bg-cyan-100  rounded-md">
+                    <h1 class="text-2xl  text-center font-bold  text-black">Notas poderosas</h1>
                 </div>
             </div>
-            <button onclick="myFunction()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Agregar nota</button>
+            <button onclick="myFunction()" class="bg-cyan-400 hover:bg-violet-500 text-white font-bold py-2 px-4 rounded">Agregar nota</button>
             <form action="{{route('cornellnote.create')}}" method="POST"  id="addnote" style="display:none;">
                 {{ csrf_field() }}
                 <label for="asignatura">Seleccione una asignatura</label>
@@ -28,41 +28,42 @@
                     <option value="{{ $asignatura->id }}">{{ $asignatura->nombre }}</option>
                     @endforeach
                 </select>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <button class="bg-cyan-400 hover:bg-violet-500 text-white font-bold py-2 px-4 rounded">
                 Añadir nota
                 </button>
             </form>
-            <div class="lg-10 ml-10 sm-12 relative overflow-x-auto mx-auto shadow-md sm:rounded-lg">
-                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <div class="text-2xl text-black mx-auto border-4 border-separate">
+            
+                <table class="w-full text-sm text-left text-gray-500 border-black border-4">
+                    <thead class="text-xs text-gray-700 uppercase bg-violet-400">
                         <tr>
-                            <th scope="col" class="px-6 py-3">
+                            <th scope="col" class="px-6 py-3 border-black border-4">
                                 Id
                             </th>
-                            <th scope="col" class="px-6 py-3">
+                            <th scope="col" class="px-6 py-3 border-black border-4">
                                 Tema
                             </th>
-                            <th scope="col" class="px-6 py-3">
-                                Palabra Clave
+                            <th scope="col" class="px-6 py-3 border-black border-4">
+                                Resumen
                             </th>
-                            <th scope="col" class="px-6 py-3">
+                            <th scope="col" class="px-6 py-3 border-black border-4">
                                 Acciones
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach($notas as $nta)
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <tr class="bg-white border-b  dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium border-black border-4">
                                 {{$nta->id}}
                             </th>
-                            <td class="px-6 py-4">
+                            <td class="px-6 py-4 border-black border-4">
                                 {{$nta->titulo}}
                             </td>
-                            <td class="px-6 py-4">
-                                {{$nta->ideas}}
+                            <td class="px-6 py-4 border-black border-4">
+                                {{$nta->resumen}}
                             </td>
-                            <td class="px-6 ">
+                            <td class="px-6 border-black border-4">
                                 <a href="{{route('cornellnote.show',$nta->id)}}" class="font-medium  hover:underline"><svg class="h-8 w-8 text-green-500"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>

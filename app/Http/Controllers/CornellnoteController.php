@@ -70,6 +70,10 @@ class CornellnoteController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $validatedData = $request->validate([
+            'ideas' => 'required',
+            'resumen' => 'required',
+        ]);
         $notaupdate = Cornellnote::find($id);
         $notaupdate -> titulo = $request  -> titulo;
         $notaupdate -> ideas = $request -> ideas;

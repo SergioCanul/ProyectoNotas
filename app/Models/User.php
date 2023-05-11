@@ -21,6 +21,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'ing',
         'password',
     ];
 
@@ -42,7 +43,7 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-    
+
     //una asignatura tiene muchos temas
     public function cornellnotes(): HasMany //nombre de la tabla en plural
     {

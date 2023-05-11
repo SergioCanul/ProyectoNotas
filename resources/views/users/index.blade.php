@@ -13,7 +13,7 @@
             
             <table class = "table border-black border-4 text-base mx-auto">
             <thead >
-                <tr class="border-black border-4 bg-emerald-500">
+                <tr class="border-black border-4 bg-violet-400">
                 <th class="border-black border-4">Nombre</th>
                 <th class="border-black border-4">Email</th>
                 
@@ -28,6 +28,15 @@
                 
                 </tr>
                 @endforeach
+                   <!--Card mensaje inicio-->          
+                <div class="w-1/4 pb-4 mx-auto px-5 my-10 border-4 border-indigo-50  bg-white rounded-sm">
+
+                    <!-- Información -->
+                    <div class="w-full mt-4 bg-cyan-100  rounded-md">
+                        <h1 class="text-2xl  text-center font-bold  text-black">Usuarios en el sistema</h1>
+                    </div>  
+                
+                </div>
             </tbody>
             </table>
 

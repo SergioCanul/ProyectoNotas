@@ -7,12 +7,13 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title> Detalles nota</title>
             </head>
+    
 
             <body>
                 <div class="flex">
 
-                <div class="w-1/3 mx-auto  text-black border-4 border-separate bg-white" >
-                    <h1 class="p-3 my-2">Id:<br> {{$nota->id}}</h1>
+                <div class="w-1/3 mx-auto  text-black border-black border-4 border-separate bg-cyan-100" >
+                    <h1 class="p-3 my-2">Id nota:<br> {{$nota->id}}</h1>
                     
                     <h1 class=" px-3 my-2">Asignatura: <br> 
                         <span class="font-semibold text-2xl text-center">
@@ -22,14 +23,14 @@
                     
                 </div>
 
-                <div class="w-2/4 px-3 mt-2 mx-auto text-md text-black border-4 border-separate bg-white" >
-                    <h2>Ideas:</h2>
+                <div class="w-2/4 px-3 mt-2 mx-auto text-md text-black border-black border-4 border-separate bg-white" >
+                    <h2 class="font-bold">Palabras clave:</h2>
                     <p>{{$nota->ideas}}</p>
                     <br>
-                    <h2>Notas:</h2>
+                    <h2 class="font-bold">Anotaciones:</h2>
                     <p>{{$nota->notas}}</p>
                     <br>
-                    <h2>Resumen:</h2>
+                    <h2 class="font-bold">Resumen:</h2>
                     <p>{{$nota->resumen}}</p>
                 </div>
 
@@ -37,4 +38,5 @@
 
             </body>
         </html>
+    
 </x-app-layout>
