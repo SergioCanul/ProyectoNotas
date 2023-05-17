@@ -36,14 +36,11 @@
                 
                 @endforeach
 
-                <!--Card mensaje inicio-->          
-                <div class="w-1/4 pb-4 mx-auto px-5 my-10 border-4 border-indigo-50  bg-white rounded-sm">
-
                     <!-- Información -->
-                    <div class="w-full mt-4 bg-cyan-100  rounded-md">
-                        <h1 class="text-2xl  text-center font-bold  text-black">Tu carrera es {{$asignatura->ing}}</h1>
+                    <div class="w-full mt-4 px-5 my-7 bg-cyan-100  rounded-md">
+                        <h1 class="text-3xl  text-center font-bold  text-black">PERTENECES A LA CARRERA DE {{strtoupper($asignatura->ing)}}</h1>
+                        <h3 class="text-xl  text-center  text-black">Aqui puedes añadir una nueva nota o administrar tus notas existentes </h3>
                     </div>  
-                
                 </div>
             </tbody>
             </table>

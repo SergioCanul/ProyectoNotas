@@ -1,4 +1,8 @@
 <x-app-layout>
+<div class="w-full px-5 my-5 mt-4 bg-cyan-100  rounded-md">
+      <h1 class="text-3xl text-center font-bold  text-black">¿TE OLVIDASTE DE ALGO?</h1>
+       <h3 class="text-xl text-center  text-black">Añade, quita, o modifica la información de tu nota</h3>
+   </div>
 
 <x-button-clr text="cancelar" :route="route('notas')"></x-button-clr>
   <form action="{{route('cornellnote.update',$nota->id)}}" method="POST" role="form" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">

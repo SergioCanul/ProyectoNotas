@@ -1,4 +1,9 @@
 <x-app-layout>
+     <!-- Información -->
+     <div class="w-full mt-4 bg-cyan-100 px-5 my-7 rounded-md">
+        <h1 class="text-3xl  text-center font-bold  text-black">DETALLES DE LA ASIGNATURA</h1>
+         <h3 class="text-xl  text-center  text-black">Aqui puedes ver los detalles y temas de la asignatura</h3>
+     </div>  
     <!DOCTYPE html>
         <html lang="en">
             <head>
@@ -7,17 +12,6 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Asignatura Detalles</title>
             </head>
-
-               <!--Card mensaje inicio-->          
-                <div class="w-1/4 pb-4 mx-auto px-5 my-10 border-4 border-indigo-50  bg-white rounded-sm">
-
-                    <!-- Información -->
-                    <div class="w-full mt-4 bg-cyan-100  rounded-md">
-                        <h1 class="text-2xl  text-center font-bold  text-black">Detalles de la asignatura</h1>
-                    </div>  
-                
-                </div>
-
             <body>
                 <div class="flex">
 

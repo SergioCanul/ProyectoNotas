@@ -1,5 +1,10 @@
 <x-app-layout>
-    <!DOCTYPE html>
+     <!-- Información -->
+     <div class="w-full mt-4 bg-cyan-100 px-5 my-7 rounded-md">
+        <h1 class="text-3xl  text-center font-bold  text-black">DETALLES DE LA NOTA</h1>
+         <h3 class="text-xl  text-center  text-black">Aqui puedes leer tu nota completa</h3>
+     </div>  
+<!DOCTYPE html>
         <html lang="en">
             <head>
                 <meta charset="UTF-8">
@@ -19,8 +24,7 @@
                         <span class="font-semibold text-2xl text-center">
                         {{$nota->titulo}}
                         </span>
-                    </h1>
-                    
+                    </h1>           
                 </div>
 
                 <div class="w-2/4 px-3 mt-2 mx-auto text-md text-black border-black border-4 border-separate bg-white" >
@@ -38,5 +42,4 @@
 
             </body>
         </html>
-    
 </x-app-layout>

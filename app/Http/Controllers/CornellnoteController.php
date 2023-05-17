@@ -26,15 +26,11 @@ class CornellnoteController extends Controller
      */
     public function create(Request $request)
     {
-        //
-
         $asignatura=Subject::find($request->id);
         return view("cornellnote.create", compact('asignatura'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+
     public function store(Request $request)
     {
         //
@@ -47,7 +43,7 @@ class CornellnoteController extends Controller
         $nuevanota -> user_id = auth()->user()->id;
         $nuevanota -> topic_id = $request -> topic;
         $nuevanota -> save();
-        return redirect("/notas");
+        return redirect("/notas")->with('exito','Tu nota ha sido guardada con exito!');
     }
 
     /**
@@ -63,10 +59,6 @@ class CornellnoteController extends Controller
         $nota=Cornellnote::find($id);
         return view('cornellnote.edit', compact('nota'));
     }
-
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, $id)
     {
         //

@@ -28,12 +28,11 @@
                 
                 </tr>
                 @endforeach
-                   <!--Card mensaje inicio-->          
-                <div class="w-1/4 pb-4 mx-auto px-5 my-10 border-4 border-indigo-50  bg-white rounded-sm">
-
+                
                     <!-- Información -->
-                    <div class="w-full mt-4 bg-cyan-100  rounded-md">
-                        <h1 class="text-2xl  text-center font-bold  text-black">Usuarios en el sistema</h1>
+                    <div class="w-full mt-4 bg-cyan-100 px-5 my-7 rounded-md">
+                        <h1 class="text-3xl  text-center font-bold  text-black">USUARIOS EN EL SISTEMA</h1>
+                        <h3 class="text-xl  text-center  text-black">Aqui puedes ver a los usuarios que se encuentran registrados en el sistema</h3>
                     </div>  
                 
                 </div>

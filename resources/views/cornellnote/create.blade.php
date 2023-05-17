@@ -1,4 +1,8 @@
 <x-app-layout>
+  <div class="w-full px-5 my-5 mt-4 bg-cyan-100  rounded-md">
+      <h1 class="text-3xl text-center font-bold  text-black">NUEVA NOTA</h1>
+       <h3 class="text-xl text-center  text-black">Llenas los campos solicitados para guardar una nueva nota</h3>
+   </div>
 <x-button-clr text="cancelar" :route="route('notas')"></x-button-clr>
   <form action="{{route('cornellnote.store')}}" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">
     {{ csrf_field() }}
