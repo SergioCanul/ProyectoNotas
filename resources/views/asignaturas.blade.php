@@ -39,7 +39,7 @@
                     <!-- Información -->
                     <div class="w-full mt-4 px-5 my-7 bg-cyan-100  rounded-md">
                         <h1 class="text-3xl  text-center font-bold  text-black">PERTENECES A LA CARRERA DE {{strtoupper($asignatura->ing)}}</h1>
-                        <h3 class="text-xl  text-center  text-black">Aqui puedes añadir una nueva nota o administrar tus notas existentes </h3>
+                        <h3 class="text-xl  text-center  text-black">Aqui puedes ver la lista completa de asignaturas correspondientes a tu  carrera </h3>
                     </div>  
                 </div>
             </tbody>

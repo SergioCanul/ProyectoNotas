@@ -23,18 +23,15 @@ Route::get('/', function () {
 //de esta forma ya puedo pasar datos
 Route::get('/dashboard', [UserController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 
-//de esta forma ya puedo pasar datos
 Route::get('/notas', [CornellnoteController::class, 'index'])->middleware(['auth', 'verified'])->name('notas');
 
-//de esta forma ya puedo pasar datos
 Route::get('/notas/{id}', [CornellnoteController::class, 'show'])->middleware(['auth', 'verified'])->name('notas.show');
 
-//de esta forma ya puedo pasar datos
 Route::get('/asignaturas', [SubjectController::class, 'index'])->middleware(['auth', 'verified'])->name('asignaturas');
 
-//de esta forma ya puedo pasar datos
 Route::get('/asignaturas/{id}', [SubjectController::class, 'show'])->middleware(['auth', 'verified'])->name('subjects.show');
 Route::post('cornellnote/create', [CornellnoteController::class, 'create'])->name('cornellnote.create');
+
 //CRUD CREADO
 Route::resource('/cornellnote', CornellnoteController::class);
 

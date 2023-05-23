@@ -16,6 +16,7 @@
                 <tr class="border-black border-4 bg-violet-400">
                 <th class="border-black border-4">Nombre</th>
                 <th class="border-black border-4">Email</th>
+                <th class="border-black border-4">Ing</th>
                 
                 </tr>
             </thead>
@@ -25,7 +26,7 @@
                 
                 <td class=" border-black border-2 mx-2  bg-white py-2 px-2">{{ $user->name }}</td>
                 <td class=" border-black border-2 mx-2  bg-white py-2 px-2">{{ $user->email }}</td>
-                
+                <td class=" border-black border-2 mx-2  bg-white py-2 px-2 uppercase text-center">{{ $user->ing }}</td>
                 </tr>
                 @endforeach
                 

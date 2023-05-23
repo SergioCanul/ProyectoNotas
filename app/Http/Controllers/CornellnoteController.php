@@ -59,6 +59,7 @@ class CornellnoteController extends Controller
         $nota=Cornellnote::find($id);
         return view('cornellnote.edit', compact('nota'));
     }
+
     public function update(Request $request, $id)
     {
         //
